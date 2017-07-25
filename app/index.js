@@ -3,7 +3,7 @@ var app = express();
 var exports = module.exports = {};
 
 app.get('/', function(req, res){
-  res.send('Servidor Activoxx');
+  res.send('Servidor Activo');
 });
 
 var server = app.listen(3000, function(){
