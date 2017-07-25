@@ -1,0 +1,25 @@
+{
+  "name": "testcontinuousintegration",
+  "version": "1.0.0",
+  "description": "prueba de continuous integration",
+  "main": "./app/index.js",
+  "scripts": {
+    "test": "./node_modules/.bin/jasmine-node spec --captureExceptions",
+    "start" : "node ./app/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivanrios/testCI.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivanrios/testCI/issues"
+  },
+  "homepage": "https://github.com/ivanrios/testCI#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "jasmine-node": "^1.14.5",
+    "request": "^2.81.0"
+  }
+}
