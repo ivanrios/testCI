@@ -18,4 +18,5 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn add selenium-standalone
       - run: yarn add chromium
+      - run: yarn add chromium-chromedriver
       - run: yarn test
