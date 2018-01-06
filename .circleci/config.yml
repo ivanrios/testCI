@@ -18,5 +18,6 @@ jobs:
           key: v1-dependencies-{{ checksum "package.json" }}
       - run: yarn add selenium-standalone
       - run: yarn add chromium
-      - run: yarn add chromium-chromedriver
+      - run: apt-get install chromium-chromedriver
+      - run: ln -s /usr/lib/chromium-browser/chromedriver /usr/bin/chromedriver
       - run: yarn test
