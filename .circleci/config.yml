@@ -16,4 +16,7 @@ jobs:
           paths:
             - node_modules
           key: v1-dependencies-{{ checksum "package.json" }}
+      - run:
+        name: Install Chromium for local development Launcher test
+        command: sudo apt-get install -y chromium
       - run: yarn test
